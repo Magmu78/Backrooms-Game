@@ -24,6 +24,8 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        float deltaTime = Time.deltaTime;
+
         float horizontal = Input.GetAxis("Horizontal");
         float vertical = Input.GetAxis("Vertical");
 
@@ -40,6 +42,6 @@ public class PlayerMovement : MonoBehaviour
 
         characterController.Move(movement * speed * Time.deltaTime);
 
-        characterController.Move(velocity * Time.deltaTime);
+        characterController.Move(velocity);
     }
 }
