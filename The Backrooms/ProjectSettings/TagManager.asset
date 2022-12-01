@@ -3,7 +3,13 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - backFloor
+  - chamberFloor
+  - startDoor
+  - EasterEggs/e1
+  - EasterEggs/e2
+  - EasterEggs/e3
   layers:
   - Default
   - TransparentFX
